@@ -13,7 +13,7 @@ const Post = (props) => {
     <>
       <div className="post mt-5 pt-0">
         <div className="img-post d-flex mt-0">
-          <img src={`${window.localStorage.getItem("image")}`} alt="" />
+          <img src={`${window.localStorage.getItem("image") ? window.localStorage.getItem("image") : 'https://keyrecruitment.co.za/wp-content/uploads/2013/10/image.jpg'}`} alt="" />
 
           <Button
             variant="light"

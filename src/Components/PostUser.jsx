@@ -4,7 +4,7 @@ const PostUser = (props) => {
   return (
     <div className="d-flex align-items-center">
       <div className="img-post-feed my-3 position-relative">
-        <img src={props.post.user.image} className="circle-img-post" alt="" />
+        <img src={props.post.user.image ? props.post.user.image : 'https://keyrecruitment.co.za/wp-content/uploads/2013/10/image.jpg'} className="circle-img-post" alt="" />
       </div>
       <div className="ml-2 my-3 w-100">
         <div className="d-flex mb-0 align-items-center">

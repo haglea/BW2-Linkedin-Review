@@ -3,8 +3,9 @@ import imgBk from "../assets/bklinkedin.jpg";
 import avatar from "../assets/muriloavatar.png";
 import "../Styles/Murilo.css";
 import SideBellow from "./SideBelow";
+import { withRouter } from "react-router";
 
-const LeftProfile = () => {
+const LeftProfile = (props) => {
   return (
     <>
       <div className="side-profile mt-5">
@@ -12,16 +13,17 @@ const LeftProfile = () => {
           className="bg-profile-side d-flex justify-content-center"
           style={{ backgroundImage: `url(${imgBk})` }}
         >
-          <div className="profile-pic-side">
+          <div className="profile-pic-side mouseCursor">
             <div
               className="bg-photo-side"
-              style={{ backgroundImage: `url(${window.localStorage.getItem('image')})` }}
+              style={{ backgroundImage: `url(${window.localStorage.getItem('image') ? window.localStorage.getItem('image') : 'https://keyrecruitment.co.za/wp-content/uploads/2013/10/image.jpg'})` }}
+              onClick={() => props.history.push('profile')}
             ></div>
           </div>
         </div>
 
         <Col className="details-profile-side">
-          <h6 className="mb-0 text-center">{window.localStorage.getItem('name') + ' ' + window.localStorage.getItem('surname')}</h6>
+          <h6 className="mb-0 text-center mouseCursor" onClick={() => props.history.push('profile')} >{window.localStorage.getItem('name') + ' ' + window.localStorage.getItem('surname')}</h6>
           <p className="mb-0 text-center about-side">
             {window.localStorage.getItem('title')}
           </p>
@@ -84,4 +86,4 @@ const LeftProfile = () => {
     </>
   );
 };
-export default LeftProfile;
+export default withRouter(LeftProfile);
