@@ -119,7 +119,7 @@ const Footer = () => {
           <label className="select-label d-none d-md-block mb-0">
             Select Language
           </label>
-          <select id="footer-select-language" className="footer-select">
+          <select id="footer-select-language" className="footer-select width50">
             <option value="ar_AE" lang="ar-ae">
               العربية (Arabic)
             </option>

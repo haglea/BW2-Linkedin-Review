@@ -24,6 +24,19 @@
         min-width: 48px !important;
       }
 
+    .width100{
+        width: 100%!important;
+        justify-content: center;
+    }
+
+    .width50{
+        width: 50% !important;
+    }
+
+    .width100:nth-child(2){
+        margin-top: 16px;
+    }
+
     }
     
     @media (max-width: 768px) { 

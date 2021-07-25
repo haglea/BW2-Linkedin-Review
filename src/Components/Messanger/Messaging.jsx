@@ -25,7 +25,7 @@ const Messaging = () => {
     }, []);
     return (
         <div
-            className='Messaging'
+            className='Messaging d-none d-md-block'
             style={
                 messaging
                     ? { transform: 'translateY(0)' }
