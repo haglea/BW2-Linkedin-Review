@@ -142,7 +142,7 @@ function Login(props) {
         </div>
       </div>
 
-      <div className="container-fluid p-0">
+      <div className="container-fluid p-0 py-1">
         <hr></hr>
       </div>
 
