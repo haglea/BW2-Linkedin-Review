@@ -7,9 +7,9 @@ const Skills = () => {
   return (
     <>
       <div className="skills">
-        <div className="skill_title">
+        <div className="skill_title justify-content-between">
           <h6 className="block-title">Skills & endorsements</h6>
-          <div className="ml-auto add-skill">
+          <div className="d-none d-md-block ml-auto add-skill">
             Add a new skill </div>
           <div className="mb-2 ml-3 edit-logo">
             <svg
@@ -52,7 +52,7 @@ const Skills = () => {
               </Button>
               <span> Web Design</span> <p className="pt-3 ml-1 numb">· 1 </p>
             </div>
-            <div className="skill_views ml-5 d-flex justify-content-between w-100">
+            <div className="skill_views pl-5 d-flex justify-content-between w-100">
               <div>
                 <img
                   src="https://media-exp3.licdn.com/dms/image/C560BAQGOfFrOCEeHgQ/company-logo_100_100/0/1561044766722?e=1634774400&v=beta&t=HGdhesNpg7ZJJt5mxdHRA8mOcBwTP_XShYJHEmNX3X8"
@@ -65,7 +65,7 @@ const Skills = () => {
                   2 of Maksym’s colleagues at AppQuality
                 </span>{" "}
               </div>
-              <div className="d-flex align-items-center">
+              <div className="d-none d-md-flex align-items-center">
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ const Skills = () => {
               <span> Visual Merchandising</span>{" "}
               <p className="pt-3 ml-1 numb">· 6 </p>
             </div>
-            <div className="skill_views ml-5 d-flex justify-content-between w-100 flex-nowrap">
+            <div className="skill_views pl-5 d-flex justify-content-between w-100 flex-nowrap">
               <div>
                 <img
                   src="https://media-exp1.licdn.com/dms/image/C560BAQHKruVJIKOWqw/company-logo_100_100/0/1626117794907?e=1634774400&v=beta&t=3ELp9K1R3MN6NtLO5zWzbcz6ljmM7OcNBu2dGxv6dpU"
@@ -142,7 +142,7 @@ const Skills = () => {
               </Button>
               <span> Node.js</span> <p className="pt-3 ml-1 numb">· 1 </p>
             </div>
-            <div className="skill_views ml-5 d-flex justify-content-between w-100 flex-nowrap">
+            <div className="skill_views pl-5 d-flex justify-content-between w-100 flex-nowrap">
               <div>
                 <img
                   src="https://media-exp1.licdn.com/dms/image/C4D0BAQGkZgktFsltFQ/company-logo_100_100/0/1519910513271?e=1634774400&v=beta&t=n2oo_SaTpeBLaStkr-Evz6jTYueJzw9boz4BlnqVJOk"

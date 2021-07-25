@@ -17,7 +17,7 @@ function TopNavBar(props) {
 
   return (
     <>
-      <Navbar id="NavBar" className="container-fluid p-0">
+      <Navbar id="NavBar" className="container-fluid px-3 py-0">
         <Container>
           <div onClick={() => props.history.push('home')} style={{ cursor: 'pointer' }}>
             <svg
@@ -87,7 +87,7 @@ function TopNavBar(props) {
                   aria-haspopup="true"
                   aria-expanded="false"
                   id="basic-nav-dropdown"
-                  className=" nav-link d-flex flex-column justify-content-center align-items-center small-inlink"
+                  className=" nav-link d-flex flex-column justify-content-center align-items-center small-inlink prMdSM-0"
                   role="button"
                 >
                   <img
