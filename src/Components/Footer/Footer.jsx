@@ -1,11 +1,12 @@
 import { Row, Col } from "react-bootstrap";
 import "../../Styles/Hasham.css";
 import { RiSettings2Fill, RiQuestionFill } from "react-icons/ri";
+import '../../Styles/MediaQuery.css'
 
 const Footer = () => {
   return (
     <div className="container footer mt-4">
-      <Row className="linkedin-icon pl-2">
+      <Row className="linkedin-icon centerFlex pl-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 84 21"
@@ -25,25 +26,25 @@ const Footer = () => {
         </svg>
       </Row>
 
-      <Row>
+      <Row className="mt-16">
         <Col className="pl-3">
-          <div className="my-1">
+          <div className="my-1 centerFlex">
             <a href="#">About</a>
           </div>
-          <div className="my-1">
+          <div className="my-1 centerFlex">
             <a href="#">Community Guidelines</a>
           </div>
-          <div className="my-1">
+          <div className="my-1 centerFlex">
             <a href="#">Privacy & Terms</a>
           </div>
-          <div className="my-1">
+          <div className="my-1 centerFlex">
             <a href="#">Sales Solution</a>
           </div>
-          <div className="my-1">
+          <div className="my-1 centerFlex">
             <a href="#">Safety Center</a>
           </div>
         </Col>
-        <Col>
+        <Col className="d-none d-md-block" >
           <div className="my-1">
             <a href="#">Accessibility</a>
           </div>
@@ -58,7 +59,7 @@ const Footer = () => {
           </div>
         </Col>
 
-        <Col sm={4} md={2}>
+        <Col sm={4} md={2} className="d-none d-md-block">
           <div className="my-1">
             <a href="#">Talent Solution</a>
           </div>
@@ -72,7 +73,7 @@ const Footer = () => {
             <a href="#">Small Bussiness</a>
           </div>
         </Col>
-        <Col sm={4} md={3} className="footerIcon">
+        <Col sm={4} md={3} className="footerIcon mt-16 displayNone">
           <div>
             <h6
               className="d-flex"
@@ -113,12 +114,12 @@ const Footer = () => {
             </h6>
           </div>
         </Col>
-        <Col sm={4} md={3} className="last-col ml-2 ">
+        <Col sm={4} md={3} className="last-col centerFlex ml-2 mt-16">
 
-          <label className="select-label mb-0">
+          <label className="select-label d-none d-md-block mb-0">
             Select Language
           </label>
-          <select id="footer-select-language" className="footer-select">
+          <select id="footer-select-language" className="footer-select width50">
             <option value="ar_AE" lang="ar-ae">
               العربية (Arabic)
             </option>
@@ -196,7 +197,7 @@ const Footer = () => {
       </Row>
       <Row>
         <Col sm={12} className="pl-1">
-          <p className="copyRight"> Linkedin Corporation &copy; 2021</p>
+          <p className="copyRight textCenterMod"> Linkedin Corporation &copy; 2021</p>
         </Col>
       </Row>
     </div>

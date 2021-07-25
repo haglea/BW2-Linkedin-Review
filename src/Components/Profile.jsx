@@ -17,7 +17,7 @@ const Profile = (props) => {
   return (
     <Container>
       <Row>
-        <Col className="col-8">
+        <Col className="col-lg-8 pXaxis">
           <UserDisplay
           // userData={props.userData}
           />
