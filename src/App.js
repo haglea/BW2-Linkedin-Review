@@ -1,20 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useState, useEffect } from 'react'
-import { Container } from 'react-bootstrap';
+import { useState } from 'react'
 import Footer from './Components/Footer/Footer';
 import TopNavBar from './Components/NavBar/TopNavBar';
-import SearchOverlay from './Components/SearchOverlay';
 import Profile from './Components/Profile'
-import Skills from './Components/skills/interests/Skills'
 import Home from './Components/Home';
-import { BrowserRouter as Router, Route, HashRouter } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 import Login from './Components/Login/Login'
-import Signup from './Components/Login/Signup';
 import Messaging from './Components/Messanger/Messaging'
 import UserProfile from './Components/UserProfile/UserProfile'
 import TransitionPage from './Components/RaiaComponents/TransitionPage';
-import NewSignUpForm from './Components/Login/NewSignUpForm'
 import SignUpForm from './Components/Login/SignUpForm';
+import './Styles/MediaQuery.css'
 
 
 
