@@ -118,6 +118,7 @@ const SignupForm = (props) => {
                 }
             )
             let userData = await response.json()
+            window.localStorage.setItem('image', 'https://keyrecruitment.co.za/wp-content/uploads/2013/10/image.jpg')
             let userDataKeyList = Object.keys(userData)
             userDataKeyList.forEach((key) =>
                 window.localStorage.setItem(key, userData[key])

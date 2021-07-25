@@ -43,11 +43,11 @@ function ModalProfileImage(props) {
             <Modal.Body className="upload-img-modal">
                 <Form>
                     
-                        {userImagePath.length > 5 && <div className="bg-photo-upload">
+                        {userImagePath.length > 5 ? <div className="bg-photo-upload">
                             <img src={userImagePath} alt="" />
-                        </div>}
-                    
-
+                        </div> : <div className="bg-photo-upload">
+                            <img src='https://keyrecruitment.co.za/wp-content/uploads/2013/10/image.jpg' alt="" />
+                        </div> }
                 </Form>
             </Modal.Body>
             <Modal.Footer className="upload-img-modal modal-footer-photo">
@@ -56,9 +56,11 @@ function ModalProfileImage(props) {
                     <Form.Group as={Col} controlId="profile">
                         <span>
                             <label For="post-img">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#EDEDEE" class="mercado-match" width="24" height="24" focusable="false">
-                                    <path d="M21.13 2.86a3 3 0 00-4.17 0l-13 13L2 22l6.19-2L21.13 7a3 3 0 000-4.16zM6.77 18.57l-1.35-1.34L16.64 6 18 7.35z"></path>
-                                </svg>
+                                <div className="mouseCursor" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#EDEDEE" class="mercado-match" width="24" height="24" focusable="false">
+                                        <path d="M21.13 2.86a3 3 0 00-4.17 0l-13 13L2 22l6.19-2L21.13 7a3 3 0 000-4.16zM6.77 18.57l-1.35-1.34L16.64 6 18 7.35z"></path>
+                                    </svg>
+                                </div>
 
                             </label>
                             <Form.Control type="file" placeholder="Update your profile image" name="post-img" id="post-img" className="test" onChange={(e) => {
@@ -73,7 +75,7 @@ function ModalProfileImage(props) {
                     <Form.Group as={Col} controlId="profile">
                         <span>
                             <label For="post-img">
-                                <div>
+                                <div className="mouseCursor">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#EDEDEE" class="mercado-match" width="24" height="24" focusable="false">
                                         <path d="M16 13a4 4 0 11-4-4 4 4 0 014 4zm6-4v11H2V9a3 3 0 013-3h1.3l1.2-3h9l1.2 3H19a3 3 0 013 3zm-5 4a5 5 0 10-5 5 5 5 0 005-5z"></path>
                                     </svg>

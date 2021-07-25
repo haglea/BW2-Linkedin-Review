@@ -71,7 +71,7 @@ useEffect(()=> getUserData(),[changeUserData])
                 <div className="profile-pic" onClick={() => setModalImg(true)}>
                   <div
                     className="bg-photo"
-                    style={{ backgroundImage: `url(${userData.image})` }}
+                    style={{ backgroundImage: `url(${userData.image ? userData.image : 'https://keyrecruitment.co.za/wp-content/uploads/2013/10/image.jpg'})` }}
                   ></div>
                 </div>
               </Col>

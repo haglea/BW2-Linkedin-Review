@@ -93,7 +93,7 @@ function TopNavBar(props) {
                   <img
                     className="avatar"
                     width="24"
-                    src={window.localStorage.getItem('image')}
+                    src={window.localStorage.getItem('image') ? window.localStorage.getItem('image') : 'https://keyrecruitment.co.za/wp-content/uploads/2013/10/image.jpg'}
                     height="24"
                     alt={window.localStorage.getItem('name')}
                     id="ember34"

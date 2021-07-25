@@ -35,7 +35,7 @@ const Messaging = () => {
             <div className='header_messaging'>
                 <div className='messaging_head'>
                     <img
-                        src='https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-hipster-vector-stock-91462914.jpg'
+                        src={window.localStorage.getItem('image') ? window.localStorage.getItem('image') : 'https://keyrecruitment.co.za/wp-content/uploads/2013/10/image.jpg'}
                         alt='profile picture'
                     /></div>
                 <div className="pr-auto titleSize"> <p>Messaging</p></div>
