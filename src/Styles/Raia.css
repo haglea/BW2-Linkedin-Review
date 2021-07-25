@@ -245,7 +245,7 @@ form{
   }
 
   .transitionPageBody img{
-      width: 600px;
+      max-width: 256px;
   }
 
 

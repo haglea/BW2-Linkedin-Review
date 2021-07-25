@@ -39,8 +39,8 @@ function TopNavBar(props) {
           </div>
           <SearchInput setIsSearchOn={props.setIsSearchOn}></SearchInput>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto nav-icons">
+          <Navbar.Collapse id="basic-navbar-nav" className="flex-justify-end">
+            <Nav className="nav-icons">
               <Nav.Link className="d-flex flex-column justify-content-center align-items-center small-inlink position-relative" onClick={() => props.history.push('home')} style={{ cursor: 'pointer' }}>
                 <svg height="24" width="24">
                   <path d="m23 9v2h-2v7c0 1.7-1.3 3-3 3h-4v-6h-4v6h-4c-1.7 0-3-1.3-3-3v-7h-2v-2l11-7z"></path>
@@ -57,7 +57,7 @@ function TopNavBar(props) {
                 <span className="text-nowrap txt-span">My network</span>
               </Nav.Link>
 
-              <Nav.Link className="d-flex flex-column justify-content-center align-items-center small-inlink">
+              <Nav.Link className="d-none d-md-flex flex-column justify-content-center align-items-center small-inlink">
                 <svg height="24" width="24">
                   <path d="m17 6v-1c0-1.7-1.3-3-3-3h-4c-1.7 0-3 1.3-3 3v1h-5v4c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-4zm-8-1c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v1h-6zm10 9c1.2 0 2.3-.5 3-1.4v4.4c0 1.7-1.3 3-3 3h-14c-1.7 0-3-1.3-3-3v-4.4c.7.9 1.8 1.4 3 1.4z"></path>
                 </svg>
@@ -71,7 +71,7 @@ function TopNavBar(props) {
                 <span className="txt-span">Messaging</span>
               </Nav.Link>
 
-              <Nav.Link className="d-flex flex-column justify-content-center align-items-center position-relative small-inlink ml-1">
+              <Nav.Link className="d-none d-md-flex flex-column justify-content-center align-items-center position-relative small-inlink ml-1">
                 <svg height="24" width="24">
                   <path d="M13.7 19C13.9 19.3 14 19.6 14 20C14 21.1 13.1 22 12 22C10.9 22 10 21.1 10 20C10 19.6 10.1 19.3 10.3 19H2V18C2 17 2.4 16.1 3.2 15.2L4.2 14H19.9L20.9 15.2C21.7 16.2 22.1 17.1 22.1 18V19H13.7ZM18.2 7.4C17.8 4.3 15.1 2 12 2C8.9 2 6.2 4.3 5.8 7.4L5 13H19L18.2 7.4Z"></path>
                 </svg>
@@ -114,7 +114,7 @@ function TopNavBar(props) {
               </div>
 
               <Nav.Link
-                className="d-flex flex-column justify-content-center align-items-center small-inlink position-relative border-left-Work"
+                className="d-none d-md-flex flex-column justify-content-center align-items-center small-inlink position-relative border-left-Work"
                 onClick={handleShow}
               >
                 <svg height="24" width="24">
@@ -127,7 +127,7 @@ function TopNavBar(props) {
 
 
               </Nav.Link>
-              <Nav.Link className="txt-span d-flex flex-column justify-content-center align-items-center small-inlink premium-inlink">
+              <Nav.Link className="d-none d-md-flex txt-span flex-column justify-content-center align-items-center small-inlink premium-inlink">
                 Try Premium for Free
               </Nav.Link>
             </Nav>

@@ -13,7 +13,7 @@ function SearchInput(props) {
     };
     return (
         <>
-            <InputGroup className="ml-2 border-0 flex-nowrap">
+            <InputGroup className="ml-2 border-0 flex-nowrap fixWidth-sm">
                 <InputGroup.Prepend>
                     <InputGroup.Text className="searchIcon border-0">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" datasupporteddps="24x24" fill="currentColor" width="20" height="20" focusable="false">
@@ -21,7 +21,7 @@ function SearchInput(props) {
                         </svg>                        </InputGroup.Text>
                 </InputGroup.Prepend>
                 <FormControl
-                    className="searchInput border-0 pl-0"
+                    className="d-none d-md-block searchInput border-0 pl-0"
                     aria-label="Default"
                     aria-describedby="inputGroup-sizing-default"
                     placeholder="Search"

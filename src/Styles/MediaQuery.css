@@ -18,9 +18,32 @@
     .textCenterMod{
         text-align: center;
     }
- }
 
-@media (max-width: 768px) { 
+    #NavBar .small-inlink {
+        min-height: 48px !important;
+        min-width: 48px !important;
+      }
+
+    }
+    
+    @media (max-width: 768px) { 
+    .searchIcon{
+        background-color: transparent !important;
+    }
+
+    .searchIcon > svg{
+        height: 28px;
+        width: 28px;
+    }
+
+    .fixWidth-sm{
+        width: 48px;
+        transform: translateY(-2px);
+    }
+
+    .flex-justify-end{
+        justify-content: flex-end;
+    }
 
  }
 
