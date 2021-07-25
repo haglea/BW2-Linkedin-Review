@@ -5,7 +5,7 @@ import { RiSettings2Fill, RiQuestionFill } from "react-icons/ri";
 const Footer = () => {
   return (
     <div className="container footer mt-4">
-      <Row className="linkedin-icon">
+      <Row className="linkedin-icon pl-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 84 21"
@@ -26,7 +26,7 @@ const Footer = () => {
       </Row>
 
       <Row>
-        <Col className="pl-1">
+        <Col className="pl-3">
           <div className="my-1">
             <a href="#">About</a>
           </div>
