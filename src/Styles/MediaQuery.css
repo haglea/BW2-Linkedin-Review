@@ -4,11 +4,19 @@
         margin-top: 16px;
 
     }
-    
+
     .centerFlex{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .displayNone{
+        display: none;
+    }
+
+    .textCenterMod{
+        text-align: center;
     }
  }
 

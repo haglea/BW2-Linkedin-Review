@@ -73,7 +73,7 @@ const Footer = () => {
             <a href="#">Small Bussiness</a>
           </div>
         </Col>
-        <Col sm={4} md={3} className="footerIcon mt-16">
+        <Col sm={4} md={3} className="footerIcon mt-16 displayNone">
           <div>
             <h6
               className="d-flex"
@@ -114,7 +114,7 @@ const Footer = () => {
             </h6>
           </div>
         </Col>
-        <Col sm={4} md={3} className="last-col ml-2 mt-16">
+        <Col sm={4} md={3} className="last-col centerFlex ml-2 mt-16">
 
           <label className="select-label d-none d-md-block mb-0">
             Select Language
@@ -197,7 +197,7 @@ const Footer = () => {
       </Row>
       <Row>
         <Col sm={12} className="pl-1">
-          <p className="copyRight"> Linkedin Corporation &copy; 2021</p>
+          <p className="copyRight textCenterMod"> Linkedin Corporation &copy; 2021</p>
         </Col>
       </Row>
     </div>
